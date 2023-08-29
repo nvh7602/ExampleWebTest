@@ -2,8 +2,22 @@
 <html>
 	<head>
 		<title>Page Title</title>
+		
 	</head>
 	<body>
+		Random float: <p id="demoRNumber"></p>
+		Random text: <p id="demoRTxt"></p>
+		<script>
+			let text;
+			if (Math.random() < 0.5) {
+			  text = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+			} else {
+			  text = "<a href=''>Visit WWF</a>";
+			}
+			document.getElementById("demoRNumber").innerHTML = Math.random();
+			document.getElementById("demoRTxt").innerHTML = text;
+		</script>
+		
 		<h1>My First Heading</h1>
 		<p>My first paragraph.</p>
 		<form>
